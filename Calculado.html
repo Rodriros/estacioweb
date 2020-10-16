@@ -1,0 +1,58 @@
+<html>
+	<head><title>Calculadora</title></head>
+<body>
+<script liguagem="javascript">
+
+//função soma	
+function soma(){
+		var n1 = prompt("Digite 1º numero","");
+		var n2 = prompt("Digite 2º numero","");
+		n1 = parseFloat(n1);
+		n2 = parseFloat(n2);
+		var calculo = n1+n2;
+	document.write("A soma de "+n1+" + "+n2+" = "+calculo);
+	}
+	
+//função subtração
+function subtracao(){
+		var n1 = prompt("Digite 1º numero","");
+		var n2 = prompt("Digite 2º numero","");
+		n1 = parseFloat(n1);
+		n2 = parseFloat(n2);
+		var calculo = n1-n2;
+	document.write("A subtração de "+n1+" - "+n2+" = "+calculo); 
+	}
+
+//função Multiplicação
+function multiplicacao(){
+		var n1 = prompt("Digite 1º numero","");
+		var n2 = prompt("Digite 2º numero","");
+		n1 = parseFloat(n1);
+		n2 = parseFloat(n2);
+		var calculo = n1*n2;
+	document.write("A multiplicação de "+n1+" * "+n2+" = "+calculo); 
+	}
+
+//função divisão
+function divisao(){
+		var n1 = prompt("Digite 1º numero","");
+		var n2 = prompt("Digite 2º numero","");
+		n1 = parseFloat(n1);
+		n2 = parseFloat(n2);
+		var calculo = n1/n2;
+	document.write("A divisão de "+n1+" / "+n2+" = "+calculo); 
+	}
+	
+</script>
+
+	<h2 align=center>Escolha a operação!
+	<table><tr><br><br>
+	<th><input type=button value="Soma" onClick="soma();"></th>
+	<th><input type=button value="Subtração" onClick="subtracao();"></th>
+	<th><input type=button value="Multiplicação" onClick="multiplicacao();"></th>
+	<th><input type=button value="Divisão" onClick="divisao();"></th>
+	</table><br><br><br><br><br><br><br><br>
+	<font color=blue size=2>OBS: calculo somente com dois números</font>
+	</h2>
+</body>
+</html>
